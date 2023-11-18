@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Eat-Better</title>
+    <link rel="shortcut icon" href="CODESOFT/favicon.ico" type="image/x-icon">
+    <style>
+        *{
+            padding: 0;margin: 0;box-sizing: border-box;
+        }
+        
+        header{
+            width: 100%;
+            height:100vh;
+            background:linear-gradient(rgba(0,0,0,0.8),rgba(0,0,0,0.2)), url('foodindex.jpeg');
+            background-size: cover;
+            font-family: sans-serif;
+            
+        }
+        nav{
+            width: 100%;
+            height: 100px;
+            display: flex;
+            justify-content:space-around;
+            align-items: center;
+        }
+        .logo{
+            font-size: 2em;
+            letter-spacing: 2px;
+            color: white;
+            
+        }
+        .logo img{
+            width:120px;
+            position: absolute;
+            left: 1%;
+            top: 1%;
+        }
+        .menu a{
+            color: aliceblue;
+            text-decoration: none;
+            padding: 10px 20px;
+            letter-spacing: 1.2px;
+            position: relative;
+        }
+        .menu a:before{
+            content: '';
+            position:absolute;
+            top: 0;
+            left: 0;
+            width: 0%;
+            height: 100%;
+            border-bottom: 2px solid tomato;
+            transition: 0.4s linear;
+
+        }
+        .menu a:hover:before{
+            width: 90%;
+
+
+        }
+        .login a{
+            background: tomato;
+            color: white;
+            text-decoration: none;
+            font-size: 20px;
+            padding:10px 20px;
+            border-radius: 8px;
+            transition: 0.4s;
+        }
+        .login a:hover{
+            background: transparent;
+            border: 1px solid tomato;
+        }
+        .core{
+            max-width: 650px;
+            position: absolute;
+            top: 50%;
+            left:50%;
+            transform: translate(-50%,-50%);
+            text-align: center;
+            color: white;
+         }
+         .core span{
+            letter-spacing: 5px;
+         }
+         .core h1{
+            font-size: 3.5em;
+         }
+         .core a{
+            text-decoration: none;
+            background: tomato;
+            color: white;
+            font-size: 18px;
+            padding: 10px 20px;
+            border-radius: 8px;
+            letter-spacing: 5px;
+            transition: 0.4s;
+         }
+         .core a:hover{
+            background: transparent;
+            border: 1px solid tomato;
+        }
+
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">
+                <img src="logo.png" alt="unable to load">
+                Eat-Better</div>
+            <div class="menu">
+                <a href="#">Home</a>
+                <a href="#">About</a>
+                <a href="#">Top-Restaurants</a>
+                <a href="#">services</a>
+                <a href="#">Contact</a>
+                
+
+            </div>
+            <div class="login">
+                <a href="login.html">Login</a>
+            </div>
+        </nav>
+        <section class="core">
+            <span>Celebrate</span>
+            <h1>Discover The Real Taste Of Food</h1>
+            <br>
+            <a href="#">Nearest Restaurant</a>
+        </section>
+
+    </header>
+    
+</body>
+</html>
